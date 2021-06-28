@@ -1,0 +1,132 @@
+.modal-bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-fg {
+    background-color: lightgray;
+    border-radius: 4px;
+    box-shadow: 8px 8px 5px rgba(0, 0, 0, 0.4);
+    color: black;
+    padding: 20rem;
+    text-align: center;
+    min-height: 450px;
+}
+
+/* ----------------Login-------------- */
+.login h1 {
+    align-self: center;
+    margin-top: 3rem;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.login-form input {
+    width: 20rem;
+    height: 1.6rem;
+    font-size: 1rem;
+}
+.login-form .button-login {
+    text-decoration: none;
+    padding: 0.5rem;
+    min-width: 7rem;
+    font-weight: 550;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    background-color: #282c34;
+    border-radius: 6px;
+    border: 2px solid #000000;
+}
+.no-account {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: baseline;
+    align-items: baseline;
+}
+.login-form .button-signup {
+    border: none;
+    font-weight: 550;
+    font-size: 1rem;
+    background-color: lightgrey;
+    margin-top: 1rem;
+}
+.login-form .button-signup:hover {
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+
+/* ----------------Register-------------- */
+
+.register {
+    display: flex;
+    flex-direction: column;
+}
+.register h1 {
+    margin-bottom: 1.5rem;
+    align-self: center;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.register-form input {
+    width: 20rem;
+    height: 1.6rem;
+    font-size: 1rem;
+}
+
+.register-button {
+    text-decoration: none;
+    padding: 0.5rem;
+    min-width: 7rem;
+    font-weight: 550;
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #ffffff;
+    background-color: #282c34;
+    border-radius: 6px;
+    border: 2px solid #000000;
+    margin-top: 1.5rem;
+}
+
+.yes-account {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: baseline;
+    align-items: baseline;
+}
+
+.register-login-button {
+    border: none;
+    font-weight: 550;
+    font-size: 1rem;
+    background-color: lightgray;
+    margin-top: 1rem;
+}
+
+.register-login-button:hover {
+    text-decoration: underline;
+    font-size: 1.6rem;
+}

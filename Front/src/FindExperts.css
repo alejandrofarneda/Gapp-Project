@@ -1,0 +1,72 @@
+.find-experts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.expert-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.find-experts-button {
+    font-weight: 600;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #000000;
+    padding: 6px;
+    margin-bottom: 4px;
+    width: 6rem;
+}
+.expert-name-foto {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+.expert-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+.user--data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: linear-gradient(to top left, #000000, #708090);
+    transition: transform 100ms ease-out 100ms;
+    font-size: 0.7rem;
+    width: 8rem;
+    height: 12rem;
+    border-radius: 8px;
+    gap: 0.1rem;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.user--data:hover {
+    transform: scale(1.1, 1.1);
+    background-image: linear-gradient(to top left, #708090, #000000);
+}
+.user--data h5 {
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+}

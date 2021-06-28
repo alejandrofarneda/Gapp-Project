@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+  gap: 2rem;
+}
+.profile-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 4rem;
+  background-color: black;
+  border-radius: 6px;
+}
+.pencil-container {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-left: 1rem;
+}
+
+.pencil {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  align-self: center;
+}
+
+.profile .tabs a {
+  display: inline-block;
+  width: 8rem;
+  border-top: 1px solid #444;
+  border-left: 1px solid #444;
+  padding: 4px 8px;
+  text-decoration: none;
+}
+
+.profile .tabs a:last-child {
+  border-right: 1px solid #444;
+}
+
+.profile .tabs a.active {
+  background-color: #9a9a9a;
+}
+
+.profile .tabs a:hover {
+  background-color: #444;
+}
+
+.profile .box .content {
+  border: 1px solid #444;
+  padding: 20px;
+  min-height: 40vh;
+}
+.info-queso-grid {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 3rem 3rem 2rem 2rem 4rem;
+  gap: 1rem;
+  grid-template-areas:
+    '. queso'
+    'nombre .'
+    'email .'
+    'rol .'
+    'descripcion .';
+}
+
+.box-nombre {
+  grid-area: nombre;
+  background-color: lightgray;
+  color: black;
+  padding: 1rem;
+  margin: 1rem;
+}
+.box-email {
+  grid-area: email;
+  background-color: lightgray;
+  color: black;
+  padding: 1rem;
+  margin: 1rem;
+}
+.box-rol {
+  grid-area: rol;
+  background-color: lightgray;
+  color: black;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.box-descripcion {
+  grid-area: descripcion;
+  background-color: lightgray;
+  color: black;
+  padding: 1rem;
+  margin: 1rem;
+}
+.profile-queso {
+  grid-area: queso;
+}
+.user-points {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('http://localhost:4000/uploads/test.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  line-height: 1.5rem;
+  color: #057f8d;
+  text-align: center;
+  align-self: flex-start;
+  font-family: 'orbitron';
+  font-size: 1.6rem;
+  font-weight: 400;
+  width: 5rem;
+  height: 5rem;
+  padding: 3.8rem;
+  border-radius: 25%;
+  filter: invert(100%);
+}

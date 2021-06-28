@@ -1,0 +1,38 @@
+/* .activity-box {
+    width: 50rem;
+    display: table-row;
+} */
+
+.activity-title {
+    align-self: center;
+    gap: 1rem;
+}
+.activity-q-a {
+    font-size: 25px;
+}
+.activity-date {
+    font-size: 20px;
+}
+
+.results-activity-box {
+    display: flex;
+    justify-content: space-between;
+
+    padding-left: 1rem;
+}
+
+.results-activity-box:hover {
+    background-color: darksalmon;
+    color: black;
+    font-weight: bold;
+}
+
+.search input {
+    width: 20rem;
+    height: 2rem;
+    font-size: 1.3rem;
+}
+.search button {
+    height: 2rem;
+    font-size: 1.22rem;
+}

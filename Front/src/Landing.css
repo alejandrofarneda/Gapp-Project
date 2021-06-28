@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito';
+}
+
+.landing-main {
+  display: grid;
+  grid-template-columns: auto 15rem 12rem 25rem 12rem 15rem auto;
+  grid-template-rows: 2.5rem 11rem auto 6rem 10rem auto;
+  grid-template-areas:
+    'intro-text intro-text intro-text intro-text intro-text intro-text intro-text'
+    '. container container container container container . '
+    '. container container container container container . '
+    '. . . register . . . '
+    '. . receive-answer askanswer get-votes . .'
+    '. vote arrow-left2 body arrow-right2 become-expert .';
+  color: white;
+  grid-area: main;
+}
+
+.container {
+  grid-area: container;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+    'pos0 pos1'
+    'pos2 pos3';
+  gap: 0.25rem;
+  margin-top: 3rem;
+}
+
+.randquestion {
+  font-size: 1.5rem;
+  cursor: default;
+}
+.randanswer {
+  filter: blur(3px);
+  cursor: default;
+}
+.pos0 {
+  grid-area: pos0;
+  border: 3px;
+  border-color: white;
+  border-style: solid;
+  border-radius: 1rem 0rem 0 0rem;
+  padding: 1rem;
+  cursor: default;
+  background-image: linear-gradient(to top left, #000000, #708090);
+  transition: transform 100ms ease-out 100ms;
+  -webkit-user-select: none;
+}
+.pos1 {
+  grid-area: pos1;
+  border: 3px;
+  cursor: default;
+  border-color: white;
+  border-style: solid;
+  border-radius: 0 1rem 0 0;
+  padding: 1rem;
+  background-image: linear-gradient(to top left, #000000, #708090);
+  transition: transform 100ms ease-out 100ms;
+  -webkit-user-select: none;
+}
+.pos2 {
+  grid-area: pos2;
+  border: 3px;
+  cursor: default;
+  border-color: white;
+  border-style: solid;
+  border-radius: 0rem 0rem 0rem 1rem;
+  padding: 1rem;
+  background-image: linear-gradient(to top left, #000000, #708090);
+  transition: transform 100ms ease-out 100ms;
+  -webkit-user-select: none;
+}
+.pos3 {
+  grid-area: pos3;
+  border: 3px;
+  border-color: white;
+  cursor: default;
+  border-style: solid;
+  border-radius: 0rem 0rem 1rem 0;
+  padding: 1rem;
+  background-image: linear-gradient(to top left, #000000, #708090);
+  transition: transform 100ms ease-out 100ms;
+  -webkit-user-select: none;
+}
+
+.pos0:hover {
+  transform: scale(1.1, 1);
+  background-image: linear-gradient(to top left, #708090, #000000);
+  box-shadow: -0.3em 0.3em 0.4rem salmon;
+}
+.pos1:hover {
+  transform: scale(1.1, 1.1);
+  background-image: linear-gradient(to top left, #708090, #000000);
+  box-shadow: 0.3em 0.3em 0.4rem salmon;
+}
+.pos2:hover {
+  transform: scale(1.1, 1.1);
+  background-image: linear-gradient(to top left, #708090, #000000);
+  box-shadow: -0.3em 0.3em 0.4rem salmon;
+}
+.pos3:hover {
+  transform: scale(1.1, 1.1);
+  background-image: linear-gradient(to top left, #708090, #000000);
+  box-shadow: 0.3em 0.3em 0.4rem salmon;
+}
+
+.landing-register {
+  grid-area: register;
+  cursor: default;
+  align-self: flex-end;
+  justify-self: center;
+  font-size: 2.5rem;
+  background-size: 90% 90%;
+  border-radius: 5px;
+  animation: color 5s;
+  padding: 0.5rem;
+
+  -moz-animation: color 5s infinite; /* Firefox */
+  -webkit-animation: color 5s infinite; /* Safari and Chrome */
+  -webkit-transition: all 0.9s ease;
+}
+
+.landing-register:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: 0.1em 0.1em 0.4rem salmon;
+}
+
+@keyframes color /* Safari and Chrome */ {
+  0% {
+    background: gray;
+  }
+  50% {
+    background: #282c34;
+  }
+  100% {
+    background: gray;
+  }
+}
+
+.landing-ask-answer {
+  justify-self: center;
+  grid-area: askanswer;
+  cursor: default;
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40% auto;
+  grid-template-areas:
+    'preg resp'
+    'arrow-left arrow-right';
+
+  align-self: flex-start;
+  font-size: 1.5rem;
+}
+.landing-ask-answer .ask {
+  grid-area: preg;
+  padding: 2rem;
+  cursor: default;
+  align-self: flex-start;
+}
+.landing-ask-answer .landing-answer {
+  grid-area: resp;
+  padding: 2rem;
+  align-self: center;
+  justify-self: flex-end;
+  cursor: default;
+  align-self: flex-start;
+}
+
+.landing-arrow-left {
+  filter: invert(100%);
+  grid-area: arrow-left;
+  width: 70px;
+  height: 120px;
+  transform: scaleX(-1);
+  margin-top: -20px;
+}
+
+.landing-arrow-right {
+  filter: invert(100%);
+  grid-area: arrow-right;
+  width: 70px;
+  height: 120px;
+  justify-self: flex-end;
+  margin-top: -20px;
+}
+
+.landing-arrow-left2 {
+  filter: invert(100%);
+  grid-area: arrow-left2;
+  width: 70px;
+  height: 120px;
+  transform: scaleX(-1);
+  margin-top: -20px;
+}
+.landing-arrow-right2 {
+  filter: invert(100%);
+  grid-area: arrow-right2;
+  width: 70px;
+  height: 120px;
+  justify-self: flex-end;
+  margin-top: -20px;
+}
+
+.receive-answer {
+  grid-area: receive-answer;
+  align-self: flex-end;
+  font-size: 1.5rem;
+  align-content: space-between;
+  cursor: default;
+  padding-bottom: 1rem;
+  justify-self: flex-end;
+}
+
+.vote {
+  grid-area: vote;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  align-content: space-between;
+  cursor: default;
+  padding-bottom: 1rem;
+  justify-self: flex-end;
+}
+
+.get-votes {
+  grid-area: get-votes;
+  align-self: flex-end;
+  cursor: default;
+  font-size: 1.5rem;
+  align-content: space-between;
+  padding-bottom: 1rem;
+  justify-self: flex-start;
+}
+.become-expert {
+  grid-area: become-expert;
+  margin-top: 3rem;
+  cursor: default;
+  font-size: 1.5rem;
+
+  padding-bottom: 1rem;
+}
+
+.landing-search {
+  grid-area: search;
+  cursor: default;
+  padding-left: 10rem;
+}
+
+.landing-intro-text {
+  grid-area: intro-text;
+  justify-self: center;
+  cursor: default;
+}
+.results {
+  grid-area: results;
+}
+
+.landing-body {
+  grid-area: body;
+  height: 4rem;
+  justify-self: center;
+  margin-top: -5rem;
+}
+
+.landing-logo {
+  grid-area: logo;
+  border-radius: 50%;
+  height: 10rem;
+}
+
+.landing-logo:hover {
+  filter: invert(82%);
+}
+
+.landing-findexperts {
+  grid-area: find-experts;
+}

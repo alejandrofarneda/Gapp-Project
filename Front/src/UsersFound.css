@@ -1,0 +1,94 @@
+.users-h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    height: 4rem;
+    background-color: black;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+}
+
+.user-found {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.user-data {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: capitalize;
+    background-image: linear-gradient(to top left, #000000, #708090);
+    transition: transform 100ms ease-out 100ms;
+    font-size: 0.7rem;
+    min-width: 10rem;
+    min-height: 15rem;
+    width: 10rem;
+    height: 15rem;
+    border-radius: 6px;
+    box-shadow: 1.5px 1.5px 3px rgb(78, 77, 77);
+    gap: 0.1rem;
+    padding: 1rem;
+    padding-top: 0;
+    gap: 0.5rem;
+}
+.user-data:hover {
+    transform: scale(1.1, 1.1);
+    background-image: linear-gradient(to top left, #708090, #000000);
+}
+.user-data h5 {
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.user-foto {
+    width: 5.1rem;
+    height: 5.1rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+.user-name-foto {
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    width: 5.1rem;
+    height: 5.1rem;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: white;
+}
+.experts-found {
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+.experts-h3 {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+
+    background-color: black;
+    border-radius: 6px;
+    margin-bottom: 3rem;
+}
