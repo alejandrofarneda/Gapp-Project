@@ -11,6 +11,8 @@ export default function AddAnswer({ id }) {
     const dispatch = useDispatch();
     const setTrigger = useSetTrigger();
     const trigger = useTrigger();
+    console.log(message);
+    const regexp = new RegExp(/<p><br[/]?><[/]?p>/g);
     const handleSubmit = async (e) => {
         e.preventDefault();
         setMessage('');
@@ -22,7 +24,7 @@ export default function AddAnswer({ id }) {
                 Authorization: 'Bearer ' + user.token,
             },
             body: JSON.stringify({
-                body: message,
+                body: message.replace(regexp, ''),
             }),
         });
 
@@ -59,7 +61,9 @@ export default function AddAnswer({ id }) {
                             className="add-answer-quill"
                         />
 
-                        <button className="add-answer-button">Enviar</button>
+                        <button className="quill-button">
+                            Postear Respuesta
+                        </button>
                     </form>
                 </div>
             )}
